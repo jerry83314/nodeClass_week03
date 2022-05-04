@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "9564eed1-02e7-4de7-b385-7b87b8bb1a8d",
+		"name": "nodeClass__week03 - heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "取得所有 posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://blooming-shelf-91093.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"blooming-shelf-91093",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增一筆 posts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Jerry\",\n    \"tags\": \"插畫\",\n    \"content\": \"今天畫什麼呢\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://blooming-shelf-91093.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"blooming-shelf-91093",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除全部 posts",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://blooming-shelf-91093.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"blooming-shelf-91093",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆 posts",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://blooming-shelf-91093.herokuapp.com/posts/627131fea6aab58dd6eae065",
+					"protocol": "https",
+					"host": [
+						"blooming-shelf-91093",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"627131fea6aab58dd6eae065"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "更新單筆 posts",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"content\": \"今天吃什麼好呢\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://blooming-shelf-91093.herokuapp.com/posts/62713220a6aab58dd6eae06c",
+					"protocol": "https",
+					"host": [
+						"blooming-shelf-91093",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"62713220a6aab58dd6eae06c"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
